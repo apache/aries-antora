@@ -3,8 +3,13 @@ site:
   start_page: documentation::index.adoc
 content:
   sources:
-  - url: ./../site
-    branches: HEAD
+#  For local "author mode" builds check out this aries-antora playbook project
+#  and the site project next to one another and uncomment the next two lines and comment out the other - url
+#  - url: ./../site
+#    branches: HEAD
+# For "production" build without needing a local site checkout uncomment the next two lines and comment out the previous two.
+  - url: https://github.com/djencks/aries-antora-site.git
+    branches: master
 
 asciidoc:
   extensions:
