@@ -22,5 +22,5 @@ ui:
   #currently .htaccess has to be copied by hand, see https://gitlab.com/antora/antora/-/issues/627 and package.json
   supplemental_files: ./supplemental-ui
 
-output:
-  clean: true
+#output:
+#  clean: true
