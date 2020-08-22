@@ -5,11 +5,11 @@ content:
   sources:
 #  For local "author mode" builds check out this aries-antora playbook project
 #  and the site project next to one another and uncomment the next two lines and comment out the other - url
-  - url: ./../site
-    branches: HEAD
+#  - url: ./../site
+#    branches: HEAD
 # For "production" build without needing a local site checkout uncomment the next two lines and comment out the previous two.
-#  - url: https://github.com/djencks/aries-antora-site.git
-#    branches: master
+  - url: https://github.com/apache/aries-antora-site.git
+    branches: master
 
 asciidoc:
   extensions:
@@ -19,7 +19,7 @@ ui:
   bundle:
     url: "./node_modules/@apache-aries/aries-antora-ui/build/aries-antora-ui-bundle.zip"
     snapshot: true
-  #currently .htaccess has to be copied by hand, see https://gitlab.com/antora/antora/-/issues/668 and package.json
+  #currently .htaccess has to be copied by hand, see https://gitlab.com/antora/antora/-/issues/627 and package.json
   supplemental_files: ./supplemental-ui
 
 output:
