@@ -1,0 +1,11 @@
+//Contains all the html and xsd files from CMS, plus the redirects from the CMS .htaccess
+redirect 301 /downloads/blogsample-0.2-incubating.html /downloads/blogsample-0.2-incubating.html
+redirect 301 /downloads/archived-releases/0.2-incubating/resleasenotes-0.2-incubating.html /downloads/archived-releases/0.2-incubating/resleasenotes-0.2-incubating.html
+redirect 301 /downloads/archived-releases/0.2-incubating/testresults-0.2-incubating.html /downloads/archived-releases/0.2-incubating/testresults-0.2-incubating.html
+redirect 301 /downloads/archived-releases/ariestrader-0.1-incubating.html /downloads/archived-releases/ariestrader-0.1-incubating.html
+redirect 301 /downloads/archived-releases/0.1-incubating.html /downloads/archived-releases/0.1-incubating.html
+redirect 301 /downloads/archived-releases/blogsample-0.1-incubating.html /downloads/archived-releases/blogsample-0.1-incubating.html
+redirect 301 /downloads/archived-releases/0.1/ariestrader-0.1-incubating.html /downloads/archived-releases/0.1/ariestrader-0.1-incubating.html
+redirect 301 /downloads/archived-releases/0.1/0.1-incubating.html /downloads/archived-releases/0.1/0.1-incubating.html
+redirect 301 /downloads/archived-releases/0.1/blogsample-0.1-incubating.html /downloads/archived-releases/0.1/blogsample-0.1-incubating.html
+redirect 301 /downloads/ariestrader-0.2-incubating.html /downloads/ariestrader-0.2-incubating.html

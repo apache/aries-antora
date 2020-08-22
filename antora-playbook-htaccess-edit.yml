@@ -19,8 +19,17 @@ ui:
   bundle:
     url: "./node_modules/@apache-aries/aries-antora-ui/build/aries-antora-ui-bundle.zip"
     snapshot: true
-  #currently .htaccess has to be copied by hand, see https://gitlab.com/antora/antora/-/issues/668 and package.json
   supplemental_files: ./supplemental-ui
 
 output:
   clean: true
+
+extensions:
+  - path: "@djencks/antora-htaccess-edit"
+    config:
+      component: documentation
+      version: master
+      htaccessSource: ./dot-htaccess-cms
+      htaccessTarget: ./supplemental-ui/.htaccess
+      htaccessNotFound: ./dot-htaccess-not-found
+      sliceAt: -2
