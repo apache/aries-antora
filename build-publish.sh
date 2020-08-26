@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#npm run clean-install
+npm run clean-install
 
 rm -rf build
 mkdir -p build/site
@@ -17,4 +17,5 @@ npm run build-noclean
 cd build/site
 git add .
 git commit -m "site build"
+git push origin master
 )
