@@ -1,9 +1,9 @@
 #!/bin/bash
 
-SITE_REPO=git@github.com:apache/aries-site-pub.git
+SITE_REPO=https://github.com/apache/aries-antora.git
 #SITE_REPO=file:///Users/david/projects/aries/site-temp/aries-site-pub.git
 
-npm run clean-install
+npm run plain-install
 
 rm -rf build
 mkdir -p build/site

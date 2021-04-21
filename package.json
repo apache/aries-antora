@@ -3,6 +3,7 @@
   "scripts": {
     "clean-build": "npm run clean-install;npm run build",
     "clean-install": "rm -rf node_modules/ .cache/ package-lock.json;npm i --cache=.cache/npm",
+    "plain-install": "npm i --cache=.cache/npm",
     "build": "node_modules/.bin/antora antora-playbook.yml --stacktrace --fetch --clean;cp ./supplemental-ui/.htaccess ./build/site/",
     "build-noclean": "node_modules/.bin/antora antora-playbook.yml --stacktrace --fetch;cp ./supplemental-ui/.htaccess ./build/site/;cp ./supplemental-ui/.asf.yaml ./build/site/"
   },
