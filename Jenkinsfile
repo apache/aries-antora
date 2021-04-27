@@ -1,12 +1,12 @@
 pipeline {
 //    agent { docker { image 'node:14-alpine' } }
-    agent any
+    agent { label: 'websites' }
 
     stages {
         stage('build') {
-            environment {
-                ARIES_SITE_CREDS = credentials('aries-site-pub-PAT')
-            }
+//            environment {
+//                ARIES_SITE_CREDS = credentials('aries-site-pub-PAT')
+//            }
             steps {
                 sh 'rm -rf build'
 // clone the aries-site-pub repo
@@ -21,7 +21,7 @@ pipeline {
                 dir('build/site') {
 		  sh 'git add .'
 		  sh 'echo `git commit -m "site build"`'
-                  sh 'git push https://$ARIES_SITE_CREDS_USR:$ARIES_SITE_CREDS_PSW@github.com/apache/aries-site-pub.git master'
+                  sh 'git push https://github.com/apache/aries-site-pub.git master'
 		}
             }
         }
