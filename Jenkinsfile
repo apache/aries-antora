@@ -1,6 +1,6 @@
 pipeline {
 //    agent { docker { image 'node:14-alpine' } }
-    agent { label: 'websites' }
+    agent { label 'websites' }
 
     stages {
         stage('build') {
