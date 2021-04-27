@@ -1,6 +1,10 @@
 pipeline {
-//    agent { docker { image 'node:14-alpine' } }
-    agent { label 'websites' }
+    agent {
+        docker {
+	    image 'node:14-alpine'
+            label 'websites1 || websites2'
+        }
+    }
 
     stages {
         stage('build') {
