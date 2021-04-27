@@ -1,4 +1,5 @@
 #!/bin/bash
+# Not currently used, but may be useful for local builds.
 
 SITE_REPO=github.com/apache/aries-site-pub.git
 
@@ -16,10 +17,3 @@ git rm -r .
 )
 
 npm run build-noclean
-
-(
-cd build/site
-git add .
-echo `git commit -m "site build"`
-git push https://${user}:${password}$SITE_REPO master
-)
