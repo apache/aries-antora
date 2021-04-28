@@ -1,9 +1,9 @@
 pipeline {
     agent {
-        docker {
-	    image 'node:14-alpine'
+//        docker {
+//	    image 'node:14-alpine'
             label 'git-websites'
-        }
+//        }
     }
 
     stages {
