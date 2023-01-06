@@ -8,8 +8,8 @@
     "build-noclean": "node_modules/.bin/antora antora-playbook.yml --stacktrace --fetch;cp ./supplemental-ui/.htaccess ./build/site/;cp ./supplemental-ui/.asf.yaml ./build/site/"
   },
   "devDependencies": {
-    "@antora/cli": "^2.3.3",
-    "@antora/site-generator-default": "^2.3.3",
+    "@antora/cli": "^3.1.2",
+    "@antora/site-generator-default": "^3.1.2",
     "@djencks/asciidoctor-antora-indexer": "^0.0.4",
     "@apache-aries/aries-antora-ui": "https://github.com/djencks/aries-antora-ui.git"
   }
